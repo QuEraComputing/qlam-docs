@@ -10,10 +10,9 @@ This repository hosts the published GitHub Pages site for QLAM documentation.
 Versioned content lives on `gh-pages` and is deployed from QuEra's internal docs
 pipeline.
 
-It is **not** an open-source codebase. Unlike
-[Bloqade](https://github.com/QuEraComputing/bloqade), QLAM platform services and
-the full docs source are not published here. The GitHub link in the docs UI
-points at this repo because it is the public Pages home for the site.
+It is **not** an open-source codebase. QLAM platform services and the full docs
+source are not published here. The GitHub link in the docs UI points at this
+repo because it is the public Pages home for the site.
 
 ## Where to go instead
 
@@ -21,7 +20,6 @@ points at this repo because it is the public Pages home for the site.
 |------|------|
 | Read the docs | https://queracomputing.github.io/qlam-docs/latest/ |
 | Install the Python SDK | https://pypi.org/project/qlam-core/ |
-| Neutral-atom SDK (open source) | https://github.com/QuEraComputing/bloqade |
 
 ## Contributing
 
