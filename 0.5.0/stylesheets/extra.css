@@ -1,0 +1,110 @@
+/* QuEra brand colors - matching qUI frontend */
+
+/* Primary colors */
+:root {
+  --qlam-primary-purple: #8A40F7;
+  --qlam-primary-orange: #FF7820;
+
+  /* Extended palette */
+  --qlam-ext-cyan: #670EFF;
+  --qlam-ext-pink: #FD7AD5;
+  --qlam-ext-red: #FF5900;
+
+  /* Neutrals */
+  --qlam-neutral-900: #1A2340;
+  --qlam-neutral-800: #232B39;
+  --qlam-neutral-700: #323844;
+  --qlam-neutral-200: #E4E6EB;
+  --qlam-neutral-100: #F3F3F5;
+  --qlam-neutral-50: #F8F9FA;
+}
+
+/* Light mode (default) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--qlam-primary-purple);
+  --md-primary-fg-color--light: #a366f9;
+  --md-primary-fg-color--dark: #7030d9;
+  --md-accent-fg-color: var(--qlam-primary-orange);
+  --md-accent-fg-color--transparent: rgba(255, 120, 32, 0.1);
+
+  --md-default-fg-color: #0f172a;
+  --md-default-fg-color--light: var(--qlam-neutral-700);
+  --md-default-fg-color--lighter: var(--qlam-neutral-200);
+  --md-default-fg-color--lightest: var(--qlam-neutral-100);
+  --md-default-bg-color: #ffffff;
+  --md-default-bg-color--light: var(--qlam-neutral-50);
+  --md-default-bg-color--lighter: var(--qlam-neutral-100);
+  --md-default-bg-color--lightest: var(--qlam-neutral-200);
+
+  --md-code-fg-color: var(--qlam-primary-purple);
+  --md-code-bg-color: rgba(138, 64, 247, 0.08);
+
+  --md-typeset-a-color: var(--qlam-primary-purple);
+}
+
+/* Dark mode (slate) */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--qlam-primary-purple);
+  --md-primary-fg-color--light: #a366f9;
+  --md-primary-fg-color--dark: #7030d9;
+  --md-accent-fg-color: var(--qlam-primary-orange);
+  --md-accent-fg-color--transparent: rgba(255, 120, 32, 0.1);
+
+  --md-default-fg-color: #f8fafc;
+  --md-default-fg-color--light: var(--qlam-neutral-200);
+  --md-default-fg-color--lighter: var(--qlam-neutral-700);
+  --md-default-fg-color--lightest: var(--qlam-neutral-800);
+  --md-default-bg-color: #0b1024;
+  --md-default-bg-color--light: #0f142b;
+  --md-default-bg-color--lighter: var(--qlam-neutral-900);
+  --md-default-bg-color--lightest: var(--qlam-neutral-800);
+
+  --md-code-fg-color: #a366f9;
+  --md-code-bg-color: rgba(138, 64, 247, 0.15);
+
+  --md-typeset-a-color: var(--qlam-primary-purple);
+}
+
+/* Logo - always use white logo since header is always dark */
+/* (white logo is set in mkdocs.yml) */
+
+/* Header styling */
+.md-header {
+  background-color: var(--qlam-neutral-900);
+}
+
+[data-md-color-scheme="default"] .md-header {
+  background-color: var(--qlam-neutral-900);
+}
+
+/* Navigation active states */
+.md-nav__link--active {
+  color: var(--qlam-primary-purple) !important;
+}
+
+/* Code block styling */
+.highlight code {
+  font-size: 0.85em;
+}
+
+/* Admonition styling */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.625rem;
+}
+
+/* Button/link hover states */
+.md-typeset a:hover {
+  color: var(--qlam-primary-orange);
+}
+
+/* Search highlight */
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+}
+
+/* Typography - match qUI font stack */
+:root {
+  --md-text-font: "Outfit", "Inter", system-ui, sans-serif;
+  --md-code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
